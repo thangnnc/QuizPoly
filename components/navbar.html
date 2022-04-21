@@ -1,0 +1,39 @@
+<div class="px-3 d-flex justify-content-between w-100">
+    <div class="d-flex-center">
+        <span class="text-center" style="width: 10vh">
+            <i class="fab fa-earlybirds brand_icon fs-1"></i>
+        </span>
+        <a class="navbar-brand" href="#">
+            Website Thi Trắc Nghiệm
+            <span ng-bind="selection.checkLogin"></span>
+        </a>
+    </div>
+    <div class="d-flex-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#account-navbar"
+            aria-controls="account-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="account-navbar">
+            <div id="loginFalse" class="nav-item dropdown" ng-if="isLogin">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="fw-normal">Xin chào, </span> {{account.fullname}}
+                    <img src="images/anh.jpg" class="ms-2 rounded-circle" width="54px" height="54px" alt="">
+                </a>
+                <ul class="dropdown-menu w-75 end-0" style="left: auto !important;" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!profile">Thông tin cá nhân</a></li>
+                    <li><a class="dropdown-item" href="#!profile/change-password">Đổi mật khẩu</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button class="dropdown-item bg-transparent" ng-click="logout()">Đăng xuất</></li>
+                </ul>
+            </div>
+            <div id="loginTrue" ng-if="!isLogin">
+                <a class="btn btn-blue rounded-pill me-2" href="#!signin" onclick="activeSidebar()">Đăng Nhập</a>
+                <a class="btn btn-outline-blue rounded-pill" href="#!signup" onclick="activeSidebar()">Đăng Kí</a>
+            </div>
+        </div>
+    </div>
+
+</div>
