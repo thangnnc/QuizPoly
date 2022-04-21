@@ -1,0 +1,130 @@
+<div id="banner" class="d-flex banner_card ">
+    <div class="card_content p-5">
+        <p class="title">Kênh Youtube Thầy Long Web</p>
+        <p class="content1 mb-4">
+            Nơi học lập trình web miễn phí với đầy đủ kiến thức.
+            Các bài giảng được đầu tư hết sức cẩn thận và kĩ lưỡng sẽ
+            giúp bạn dễ nắm bắt kiến thức mới trong lập trình</p>
+        <a class="btn btn-outline-light rounded-pill" href="https://www.youtube.com/c/ThayLongWeb" target="_blank">Truy
+            cập kênh</a>
+    </div>
+    <div class="card_image d-flex ">
+        <a class="mt-auto mb-auto" href="https://www.youtube.com/c/ThayLongWeb" target="_blank">
+            <img class="" src="images/thaylong1.png" alt="">
+        </a>
+    </div>
+</div>
+<div id="home_content" class="row justify-content-center mt-5">
+    <div id="frontent">
+        <div class="head_title d-flex-center justify-content-between">
+            <span class="title_line"># Trắc Nghiệm Kiến Thức Front-End</span>
+            <a class="btn btn-outline-blue btn_detail rounded-pill"
+                href="#!course/frontend/Front-End">
+                Xem thêm
+                <i class="fas fa-angle-double-right ms-2"></i>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col" ng-repeat="course in courses | filter: type='frontend' | limitTo:4:0">
+                <div class="card_quiz rounded p-4 pb-1 mb-3">
+                    <a href="#!quiz/{{course.id}}/{{course.name}}">
+                        <img src="images/course_img/{{course.image}}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body p-0 mt-3">
+                        <a href="#!quiz/{{course.id}}/{{course.name}}" class="text-decoration-none text-dark">
+                            <h4 class="card-title mb-2">{{course.name}}</h4>
+                        </a>
+                        <p class="text-muted fs-6">
+                            <i class="fas fa-users"></i>
+                            {{course.joiner}} người tham gia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="backend">
+        <div class="head_title d-flex-center justify-content-between">
+            <span class="title_line"># Trắc Nghiệm Kiến Thức Back-End</span>
+            <a class="btn btn-outline-blue btn_detail rounded-pill"
+                href="#!course/backend/Back-End">
+                Xem thêm
+                <i class="fas fa-angle-double-right ms-2"></i>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col" ng-repeat="course in courses | filter: type='backend' | limitTo:4:0">
+                <div class="card_quiz rounded p-4 pb-1 mb-3">
+                    <a href="#!quiz/{{course.id}}/{{course.name}}">
+                        <img src="images/course_img/{{course.image}}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body p-0 mt-3">
+                        <a href="#!quiz/{{course.id}}/{{course.name}}" class="text-decoration-none text-dark">
+                            <h4 class="card-title mb-2">{{course.name}}</h4>
+                        </a>
+                        <p class="text-muted fs-6">
+                            <i class="fas fa-users"></i>
+                            {{course.joiner}} người tham gia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="database">
+        <div class="head_title d-flex-center justify-content-between">
+            <span class="title_line"># Trắc Nghiệm Kiến Thức Database</span>
+            <a class="btn btn-outline-blue btn_detail rounded-pill"
+                href="#!course/database/Database">
+                Xem thêm
+                <i class="fas fa-angle-double-right ms-2"></i>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col" ng-repeat="course in courses | filter: type='database' | limitTo:4:0">
+                <div class="card_quiz rounded p-4 pb-1 mb-3">
+                    <a href="#!quiz/{{course.id}}/{{course.name}}">
+                        <img src="images/course_img/{{course.image}}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body p-0 mt-3">
+                        <a href="#!quiz/{{course.id}}/{{course.name}}" class="text-decoration-none text-dark">
+                            <h4 class="card-title mb-2">{{course.name}}</h4>
+                        </a>
+                        <p class="text-muted fs-6">
+                            <i class="fas fa-users"></i>
+                            {{course.joiner}} người tham gia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="other">
+        <div class="head_title d-flex-center justify-content-between">
+            <span class="title_line"># Trắc Nghiệm Kiến Thức Khác</span>
+            <a class="btn btn-outline-blue btn_detail rounded-pill"
+                href="#!course/other/Khác">
+                Xem thêm
+                <i class="fas fa-angle-double-right ms-2"></i>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col" ng-repeat="course in courses | filter: type='other' | limitTo:4:0">
+                <div class="card_quiz rounded p-4 pb-1 mb-3">
+                    <a href="#!quiz/{{course.id}}/{{course.name}}">
+                        <img src="images/course_img/{{course.image}}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body p-0 mt-3">
+                        <a href="#!quiz/{{course.id}}/{{course.name}}" class="text-decoration-none text-dark">
+                            <h4 class="card-title mb-2">{{course.name}}</h4>
+                        </a>
+                        <p class="text-muted fs-6">
+                            <i class="fas fa-users"></i>
+                            {{course.joiner}} người tham gia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
